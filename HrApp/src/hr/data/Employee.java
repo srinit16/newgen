@@ -1,6 +1,6 @@
 package hr.data;
 
-public abstract class Employee {
+public  class Employee {
 		private int id;
 		private String name;
 		protected double salary;
@@ -29,7 +29,9 @@ public abstract class Employee {
 		public double getSalary() {
 			return salary;
 		}
-		public abstract void raiseSalary(double amount);
+		public void raiseSalary(double amount) {
+			this.salary+=amount;
+		}
 		
 		public byte getDeptId() {
 			return deptId;

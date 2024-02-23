@@ -9,6 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import hr.gui.event.EmployeeFormEvent;
+
 public class SidePanel extends JPanel{
 	private JButton bAdd;
 	private JButton bUpdate;
@@ -27,5 +29,12 @@ public class SidePanel extends JPanel{
 		this.add(bDelete);
 		this.add(bSearch);
 		
+		
+	}
+	public void registerEvent(HrmPanel hp){
+				bAdd.addActionListener(new EmployeeFormEvent(hp));
+				bUpdate.addActionListener(new EmployeeFormEvent(hp));
+				bDelete.addActionListener(new EmployeeFormEvent(hp));
+				bSearch.addActionListener(new EmployeeFormEvent(hp));
 	}
 }

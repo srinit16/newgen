@@ -15,6 +15,7 @@ public class HrApp extends JFrame {
 		header=new HeaderPanel();
 		footer=new FooterPanel();
 		side=new SidePanel();
+		side.registerEvent(hp);
 		this.setSize(400,350);
 		this.setLayout(new BorderLayout());
 		this.add(hp, BorderLayout.CENTER);
@@ -24,7 +25,6 @@ public class HrApp extends JFrame {
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setTitle("HR Management System");
 	}
-	
 	
 	public static void main(String[] args) {
 				new HrApp().setVisible(true);

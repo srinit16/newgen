@@ -32,4 +32,39 @@ public class HrmPanel extends JPanel{
 		this.add(esalaryLabel); this.add(esalary);
 		this.add(edeptIdLabel); this.add(edeptId);
 	}
+
+	public JTextField getEid() {
+		return eid;
+	}
+
+	public void setEid(JTextField eid) {
+		this.eid = eid;
+	}
+
+	public JTextField getEname() {
+		return ename;
+	}
+
+	public void setEname(JTextField ename) {
+		this.ename = ename;
+	}
+
+	public JTextField getEsalary() {
+		return esalary;
+	}
+
+	public void setEsalary(JTextField esalary) {
+		this.esalary = esalary;
+	}
+
+	public JTextField getEdeptId() {
+		return edeptId;
+	}
+
+	public void setEdeptId(JTextField edeptId) {
+		this.edeptId = edeptId;
+	}
+	
+	
+	
 }
